@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} font-inter antialiased w-screen h-screen`}
+        className={`${inter.variable} font-inter antialiased w-screen min-h-screen`}
       >
         <AppRouterCacheProvider>
         {children}
