@@ -100,9 +100,9 @@ const Layout = ({children}: {children: React.ReactNode}) =>{
     }    
   
     return (
-        <main className="flex h-screen">
+        <main className="w-screen h-screen flex justify-center items-center">
                  <Sidebar {...userData}/>
-            <section className="flex h-full flex-1 flex-col">
+            <section className=" w-full h-full flex flex-col justify-start items-center">
               <MobileNavigation {...userData}/>
               <Header/>
 
