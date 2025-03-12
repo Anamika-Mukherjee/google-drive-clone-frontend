@@ -100,7 +100,7 @@ const AuthForm = ({type}: {type: FormType}) =>{
         setIsloading(true);
 
         //api request to backend to authenticate user
-        const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/auth/signin`, formValues, {
+        const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}auth/signin`, formValues, {
           headers: {
             "Content-Type": "application/json"
           },
