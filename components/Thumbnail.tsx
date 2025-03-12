@@ -12,7 +12,7 @@ interface Props{
 const Thumbnail = ({type, extension, url = ""}: Props) =>{
 
     return(
-        <figure className="w-[30] h-[30] rounded-[60] bg-peach flex justify-center items-center">
+        <figure className="w-[30px] h-[30px] rounded-[60px] bg-peach flex justify-center items-center">
             <Image 
              src = {getFileIcon(extension, type)}
              alt = "thumbnail"

@@ -3,7 +3,6 @@
 import Link  from "next/link";
 import React from "react";
 import Thumbnail from "./Thumbnail";
-import { convertFileSize } from "@/lib/utils";
 import FormattedDateTime from "./FormattedDateTime";
 import ActionsDropDown from "./ActionsDropDown";
 import { FileInfo } from "@/types";

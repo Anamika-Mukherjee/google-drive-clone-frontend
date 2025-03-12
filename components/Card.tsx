@@ -12,7 +12,7 @@ import { FileInfo, SharedFileInfo } from "@/types";
 const Card = ({file, type, extension}: {file: FileInfo, type: string, extension: string}) =>{
 
     return(
-        <div className="w-[200] h-[150] flex justify-between items-center rounded-xl m-4 bg-white hover:bg-gray-50 shadow-md">
+        <div className="w-[200px] h-[150px] flex justify-between items-center rounded-xl m-4 bg-white hover:bg-gray-50 shadow-md">
         <Link
         href = {file.signedUrl.signedUrl}
         target="_blank"
