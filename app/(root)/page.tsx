@@ -211,7 +211,7 @@ export default function Page() {
                     <TypeCard type = "other" size = {otherFileSize} url="/media"/>
                   </div>
               </div>
-              <div className="w-full h-auto lg:w-2/5 lg:h-full lg:overflow-y-auto flex flex-col justify-start items-start space-y-4 m-4 bg-white rounded-xl py-6 px-4">
+              <div className="w-full h-auto min-h-full lg:w-2/5 lg:h-full lg:overflow-y-auto flex flex-col justify-start items-start space-y-4 m-4 bg-white rounded-xl py-6 px-4">
                     <div className="w-full h-auto flex justify-start items-center">
                       <p className="font-bold text-xl">Recent Files Uploaded</p>
                     </div>
