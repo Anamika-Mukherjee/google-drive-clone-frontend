@@ -53,7 +53,7 @@ export default function Page() {
                   setIsloading(true);
 
                   //api request to backend to get all file information
-                  const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/file-list`, {
+                  const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/file-list`, {
                       headers: {
                           "Content-Type": "application/json",
                           "Authorization": `Bearer ${token}`
@@ -115,7 +115,7 @@ export default function Page() {
             setIsloading(true);
 
             //api request to backend to get file information on the basis of file type
-            const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/storage-usage`, {
+            const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/storage-usage`, {
                 headers: {
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${token}`

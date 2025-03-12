@@ -15,8 +15,7 @@ import {
     SelectItem,
     SelectTrigger,
     SelectValue,
-  } from "@/components/ui/select"
-import {Dialog, DialogContent, DialogHeader, DialogTitle} from "@/components/ui/dialog";
+  } from "@/components/ui/select";
 import { AccesserInfo, FileInfo } from "@/types";
   
 //component to render thumbnail based on the file type

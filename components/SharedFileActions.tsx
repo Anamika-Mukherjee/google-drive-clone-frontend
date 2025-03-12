@@ -15,14 +15,10 @@ import {
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu";
 import { sharedFileActions, MAX_FILE_SIZE } from "@/constants";  
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { SharedFileDetails} from "./SharedFileModal";
 import { AccesserInfo, ActionType, FileInfo, SharedFileInfo } from "@/types";
 import { toast } from "sonner";
-import Thumbnail from "./Thumbnail";
-import { getFileType, convertFileToUrl } from "@/lib/utils";
-import {Textarea} from "@/components/ui/textarea";
 
 //component for file actions for shared files
 const SharedFileActions = ({file}: {file: SharedFileInfo})=>{
@@ -58,7 +54,7 @@ const SharedFileActions = ({file}: {file: SharedFileInfo})=>{
                 }
 
                 //api request to backend to retrieve user id
-                const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/dashboard`, {
+                const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/dashboard`, {
                     headers: {
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${token}`
@@ -117,7 +113,7 @@ const SharedFileActions = ({file}: {file: SharedFileInfo})=>{
                 setIsLoading(true);
 
                 //api call to backend to get accesser list
-                const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/accesser-list`, formData, {
+                const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/accesser-list`, formData, {
                     headers: {
                         "Content-Type": "application/json",
                         "Authorization": `Bearer ${token}`
@@ -188,7 +184,7 @@ const SharedFileActions = ({file}: {file: SharedFileInfo})=>{
            setIsLoading(true);
 
            //api request to backend for uploading edited file
-           const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/upload-edit`, formData, {
+           const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/upload-edit`, formData, {
             headers: {
                 "Content-Type": "multipart/form-data",
                 "Authorization": `Bearer ${token}`
@@ -284,7 +280,7 @@ const SharedFileActions = ({file}: {file: SharedFileInfo})=>{
            setIsLoading(true);
 
            //api request to backend to receive upload url
-           const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/edit-file`, formData, {
+           const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/edit-file`, formData, {
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": `Bearer ${token}`

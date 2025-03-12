@@ -62,7 +62,7 @@ const Search = () =>{
                }
  
                //api call to backend to get results for the query
-               const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/search`, {
+               const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}search`, {
                 params: {
                     query: debouncedQuery
                 },

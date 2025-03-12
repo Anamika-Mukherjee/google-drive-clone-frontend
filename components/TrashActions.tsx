@@ -51,7 +51,7 @@ const TrashActions = ({file}: {file: TrashFileInfo})=>{
             setIsloading(true);
 
             //api request to backend to restore file
-            const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/file-restore`, formData, {
+            const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/file-restore`, formData, {
                 headers:{
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${token}`
@@ -102,7 +102,7 @@ const TrashActions = ({file}: {file: TrashFileInfo})=>{
             setIsloading(true);
 
             //api request to backend to permanently delete file
-            const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/file-delete`, formData, {
+            const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/file-delete`, formData, {
                 headers:{
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${token}`

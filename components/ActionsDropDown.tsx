@@ -59,7 +59,7 @@ const ActionsDropDown = ({file}: {file: FileInfo})=>{
                 setIsLoading(true);
 
                 //api call to backend to get accesser list
-                const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/accesser-list`, formData, {
+                const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/accesser-list`, formData, {
                     headers: {
                         "Content-Type": "application/json",
                         "Authorization": `Bearer ${token}`
@@ -120,7 +120,7 @@ const ActionsDropDown = ({file}: {file: FileInfo})=>{
             setIsLoading(true);
 
             //api call to backend to rename file
-            const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/file-rename`, formData, {
+            const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/file-rename`, formData, {
                 headers:{
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${token}`
@@ -174,7 +174,7 @@ const ActionsDropDown = ({file}: {file: FileInfo})=>{
             setIsLoading(true);
 
             //api request to backend to move file to trash
-            const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/file-trash`, formData, {
+            const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/file-trash`, formData, {
                 headers:{
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${token}`
@@ -228,7 +228,7 @@ const ActionsDropDown = ({file}: {file: FileInfo})=>{
             setIsLoading(true);
 
             //api request to backend to add accesser's email to the accesser list for the file
-            const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/add-accesser`, formData, {
+            const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/add-accesser`, formData, {
                 headers:{
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${token}`
@@ -343,7 +343,7 @@ const ActionsDropDown = ({file}: {file: FileInfo})=>{
             setIsLoading(true);
 
             //api request to remove accesser from the accesser list
-            const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/remove-accesser`, formData, {
+            const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/remove-accesser`, formData, {
                 headers:{
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${token}`

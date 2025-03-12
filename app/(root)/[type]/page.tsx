@@ -68,7 +68,7 @@ const Page = () =>{
                 setIsloading(true);
 
                 //api request to backend to get files based on the sorting parameters and the file type
-                const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/file-list-type`, formData, {
+                const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/file-list-type`, formData, {
                    headers: {
                        "Content-Type": "application/json", 
                        "Authorization": `Bearer ${token}`

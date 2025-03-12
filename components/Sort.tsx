@@ -2,7 +2,6 @@
 
 import React from "react";
 import {usePathname, useRouter} from "next/navigation";
-import axios from "axios";
 import {
   Select,
   SelectContent,

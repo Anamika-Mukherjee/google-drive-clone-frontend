@@ -46,7 +46,7 @@ const Page = () =>{
                     setIsloading(true);
 
                     //api request to backend to get trash file information
-                    const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/trash-list`, {
+                    const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/trash-list`, {
                         headers: {
                             "Content-Type": "application/json",
                             "Authorization": `Bearer ${token}`

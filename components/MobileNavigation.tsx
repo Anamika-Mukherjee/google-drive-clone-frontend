@@ -48,7 +48,7 @@ const MobileNavigation = ({fullName, email}: Props) =>{
             setIsLoading(true);
             
             //api request to backend to sign out user
-            const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/auth/signout`, {
+            const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}auth/signout`, {
                 headers: {
                 "Content-Type": "application/json"
                 }

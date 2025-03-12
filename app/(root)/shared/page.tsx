@@ -46,7 +46,7 @@ const Page = () =>{
                     setIsloading(true);
 
                     //api request to backend to get shared file information
-                    const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/shared-list`, {
+                    const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/shared-list`, {
                         headers: {
                             "Content-Type": "application/json",
                             "Authorization": `Bearer ${token}`

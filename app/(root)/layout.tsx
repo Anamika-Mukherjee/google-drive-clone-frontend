@@ -65,7 +65,7 @@ const Layout = ({children}: {children: React.ReactNode}) =>{
     const getUserData= async (token: string)=>{
         try{
             //api request to backend to fetch user data
-            const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/dashboard`, {
+            const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/dashboard`, {
                 headers: {
                 "Content-Type": "application/json",
                 "Authorization": `Bearer ${token}`

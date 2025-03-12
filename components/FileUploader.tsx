@@ -9,8 +9,6 @@ import { getFileType, convertFileToUrl } from "@/lib/utils";
 import Thumbnail from "./Thumbnail";
 import { MAX_FILE_SIZE } from "@/constants";
 import { toast } from "sonner";
-import { FileInfo } from "@/types";
-
 
 interface UploadFileProps{
   file: File,
@@ -46,7 +44,7 @@ const FileUploader = () =>{
         setIsLoading(true);
 
         //api request to backend to upload file
-        const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user/file-upload`, formData, {
+        const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}user/file-upload`, formData, {
         headers: {
             "Content-Type": "multipart/form-data",
             "Authorization": `Bearer ${token}`
