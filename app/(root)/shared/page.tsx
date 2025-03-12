@@ -110,14 +110,14 @@ const Page = () =>{
             <section className="w-full h-auto flex flex-col justify-start items-start">
                 <h1 className="text-xl capitalize mt-4 ml-4 font-semibold">Shared</h1>
                 <div className="w-full h-auto flex justify-between items-center">
-                    <div className="w-1/4 h-[20] ml-4 mt-2">
+                    <div className="w-1/4 h-[20px] ml-4 mt-2">
                         <p className="text-xs font-semibold">  
                             Total:<span className="ml-1">
                                 {fileSize} 
                             </span>
                         </p>
                     </div>
-                    <div className="w-1/4 h-[20] hidden lg:flex justify-center items-center">
+                    <div className="w-1/4 h-[20px] hidden lg:flex justify-center items-center">
                         <p className="sm:block text-gray text-xs font-semibold mr-4">Sort by:</p>
                         <Sort />
                     </div>

@@ -11,7 +11,7 @@ import { convertFileSize } from "@/lib/utils";
 const SharedFileCard = ({file, type, extension}: {file: SharedFileInfo, type: string, extension: string}) =>{
    
     return(
-        <div className="w-[200] h-[200] flex justify-between items-center rounded-xl m-4 bg-white hover:bg-gray-50 shadow-md">
+        <div className="w-[200px] h-[200px] flex justify-between items-center rounded-xl m-4 bg-white hover:bg-gray-50 shadow-md">
         <Link
         href = {file.signedUrl.signedUrl}
         target="_blank"

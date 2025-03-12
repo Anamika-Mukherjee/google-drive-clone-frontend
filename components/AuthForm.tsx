@@ -274,7 +274,7 @@ const AuthForm = ({type}: {type: FormType}) =>{
                 <FormControl>
                   <Input
                     placeholder = "Full Name" {...field} 
-                    className = "h-[50] text-3xl lg:h-[35] lg:text-lg"/>
+                    className = "h-[50px] text-3xl lg:h-[35px] lg:text-lg"/>
                 </FormControl>
                 <FormMessage/>
               </FormItem>
@@ -291,7 +291,7 @@ const AuthForm = ({type}: {type: FormType}) =>{
                   className="text-3xl lg:text-lg">Email</FormLabel>
                 <FormControl>
                   <Input placeholder="Email" {...field} 
-                    className = "h-[50] text-3xl lg:h-[35] lg:text-lg"/>
+                    className = "h-[50px] text-3xl lg:h-[35px] lg:text-lg"/>
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -306,7 +306,7 @@ const AuthForm = ({type}: {type: FormType}) =>{
                   className="text-3xl lg:text-lg">Password</FormLabel>
                 <FormControl>
                   <Input placeholder="Password" {...field} 
-                    className = "h-[50] text-3xl lg:h-[35] lg:text-lg"
+                    className = "h-[50px] text-3xl lg:h-[35px] lg:text-lg"
                     type = "password"/>
                 </FormControl>
                 <FormMessage />
@@ -323,7 +323,7 @@ const AuthForm = ({type}: {type: FormType}) =>{
                   className="text-3xl lg:text-lg">Password</FormLabel>
                 <FormControl>
                   <Input placeholder="Confirm Password" {...field} 
-                    className = "h-[50] text-3xl lg:h-[35] lg:text-lg"
+                    className = "h-[50px] text-3xl lg:h-[35px] lg:text-lg"
                     type = "password"/>
                 </FormControl>
                 <FormMessage />
@@ -332,7 +332,7 @@ const AuthForm = ({type}: {type: FormType}) =>{
           />
           )}
           
-          <div className="w-full h-[60] px-4 py-1 lg:w-2/5 lg:px-0 lg:h-[50]">
+          <div className="w-full h-[60px] px-4 py-1 lg:w-2/5 lg:px-0 lg:h-[50px]">
           <Button 
           type = "submit"
           className = "w-full h-full bg-violet text-3xl hover:bg-violet-dark py-4 lg:w-full lg:text-xl">

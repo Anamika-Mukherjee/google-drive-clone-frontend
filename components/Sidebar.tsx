@@ -19,7 +19,7 @@ const Sidebar = ({fullName, email}: Props) =>{
     return(
         <aside className = "sidebar">
            <Link href="/" className="w-full flex justify-start items-center p-4">
-           <div className="lg:w-[50] h-full bg-brand p-2 rounded-2xl hidden lg:flex justify-center items-center">
+           <div className="lg:w-[50px] h-full bg-brand p-2 rounded-2xl hidden lg:flex justify-center items-center">
              <Image 
              src="/logo.png"
              alt="logo"
@@ -27,7 +27,7 @@ const Sidebar = ({fullName, email}: Props) =>{
              height = {30}
              />
              </div>
-           <div className="w-[40] h-full bg-brand p-2 rounded-lg lg:hidden flex justify-center items-center">
+           <div className="w-[40px] h-full bg-brand p-2 rounded-lg lg:hidden flex justify-center items-center">
              <Image 
              src="/logo.png"
              alt="logo"

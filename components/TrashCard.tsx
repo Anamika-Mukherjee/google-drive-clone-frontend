@@ -1,6 +1,5 @@
 "use client";
 
-import Link  from "next/link";
 import React from "react";
 import Thumbnail from "./Thumbnail";
 import { convertFileSize } from "@/lib/utils";
@@ -12,7 +11,7 @@ import { TrashFileInfo } from "@/types";
 const TrashCard = ({file, type, extension}: {file: TrashFileInfo, type: string, extension: string}) =>{
 
     return(
-        <div className="w-[200] h-[150] flex justify-between items-center rounded-xl m-4 bg-white shadow-md">
+        <div className="w-[200px] h-[150px] flex justify-between items-center rounded-xl m-4 bg-white shadow-md">
         <div       
           className = "w-full h-full font-normal text-xs flex justify-between items-start">
             <div className="w-1/2 h-full font-normal text-xs flex flex-col justify-start items-start space-y-5 p-4">

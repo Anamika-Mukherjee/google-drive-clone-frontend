@@ -6,8 +6,8 @@ const Layout = ({children}: {children: React.ReactNode}) =>{
     return(
           <div className="flex min-h-screen w-screen justify-between">
             <section className = "w-screen min-h-screen flex flex-col justify-around items-center lg:justify-center lg:items-center lg:w-2/3 xl:w-2/3">
-                <div className="w-full h-[100] flex justify-center p-4 space-x-4 lg:hidden">
-                  <div className="w-[70] h-full bg-brand rounded-2xl flex justify-center items-center">
+                <div className="w-full h-[100px] flex justify-center p-4 space-x-4 lg:hidden">
+                  <div className="w-[70px] h-full bg-brand rounded-2xl flex justify-center items-center">
                   <Image 
                   src="/logo.png"
                   alt="logo"

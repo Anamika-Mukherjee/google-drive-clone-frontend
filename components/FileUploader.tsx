@@ -161,7 +161,7 @@ const FileUploader = () =>{
           </Button>
           {/* if files state is non-empty, map through all the files and display them with file name and thumbnail in the upload list */}
           {files.length > 0 && (
-            <ul className="w-auto min-w-[250] z-10 h-auto mt-10 p-4 absolute right-[100] top-[900] flex flex-col justify-center items-start rounded-md bg-gray-light lg:absolute lg:right-[50] lg:top-[30]">
+            <ul className="w-auto min-w-[250px] z-10 h-auto mt-10 p-4 absolute right-[100px] top-[900px] flex flex-col justify-center items-start rounded-md bg-gray-light lg:absolute lg:right-[50px] lg:top-[30px]">
                 <h4 className="text-center mb-4">Uploading</h4>
                 {files.map((file, index)=>{
                   const {type, extension} = getFileType(file.name);

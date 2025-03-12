@@ -99,7 +99,7 @@ const MobileNavigation = ({fullName, email}: Props) =>{
 
     return (
         <header className="w-full flex justify-between items-center lg:hidden">
-            <div className="w-[50] h-[40] bg-brand p-2 rounded-2xl lg:hidden flex justify-center items-center mt-2 ml-4">
+            <div className="w-[50px] h-[40px] bg-brand p-2 rounded-2xl lg:hidden flex justify-center items-center mt-2 ml-4">
                 <Image 
                     src="/logo.png"
                     alt="logo"
@@ -118,7 +118,7 @@ const MobileNavigation = ({fullName, email}: Props) =>{
                 </SheetTrigger>
                 <SheetContent className="lg:hidden bg-violet-light min-h-screen">  
                     <SheetTitle>
-                        <div className="w-full h-[40] flex justify-start space-x-4 items-center">
+                        <div className="w-full h-[40px] flex justify-start space-x-4 items-center">
                             <Image 
                                 src={avatarPlaceholderUrl}
                                 alt="avatar"
