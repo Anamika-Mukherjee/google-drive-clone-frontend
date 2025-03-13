@@ -132,7 +132,7 @@ const Search = () =>{
                         
                     {/* if open state is true, render div element to show file list from the query results */}
                     {open ? (
-                        <div className="w-[450px] h-auto bg-white border-2 rounded-lg flex flex-col justify-center items-center absolute top-[60px] left-[700px] z-10 p-2">
+                        <div className="w-[450px] h-auto bg-white border-2 rounded-lg flex flex-col justify-center items-center absolute top-[60px] left-[670px] z-10 p-2">
                             <ul className="w-full h-auto flex flex-col justify-between items-center">
 
                             {/* if results has files, map each file and render file information in list form */}
@@ -153,7 +153,7 @@ const Search = () =>{
                         </div>
                     ):( 
                         // if open state is false i.e. no files in response, render paragraph element to inform that
-                        <div className="w-[300px] h-auto bg-white border-2 rounded-md flex flex-col justify-center items-center absolute top-[60px] left-[700px] z-10 ">
+                        <div className="w-[300px] h-auto bg-white border-2 rounded-md flex flex-col justify-center items-center absolute top-[60px] left-[670px] z-10 ">
                             <p className="w-full h-[40px] text-sm flex justify-center items-center">No files found</p>
                         </div>
                     )}
