@@ -153,7 +153,7 @@ export default function Page() {
       .then((response)=>{
 
         //define correct type for returned data
-        const storageInfo : StorageInfo[] = response?.data as StorageInfo[];
+        const storageInfo : StorageInfo[] = response?.data.usageData as StorageInfo[];
 
         //variable to store size of "media" type
         let medSize : number = 0;
