@@ -272,6 +272,7 @@ const AuthForm = ({type}: {type: FormType}) =>{
                 <FormControl>
                   <Input
                     placeholder = "Full Name" {...field} 
+                    autoComplete="off"
                     className = "h-[50px] text-3xl lg:h-[35px] lg:text-lg"/>
                 </FormControl>
                 <FormMessage/>
@@ -289,6 +290,7 @@ const AuthForm = ({type}: {type: FormType}) =>{
                   className="text-3xl lg:text-lg">Email</FormLabel>
                 <FormControl>
                   <Input placeholder="Email" {...field} 
+                    autoComplete="off"
                     className = "h-[50px] text-3xl lg:h-[35px] lg:text-lg"/>
                 </FormControl>
                 <FormMessage />

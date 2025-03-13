@@ -2,7 +2,7 @@
 
 import React, {useState, useEffect, useCallback} from "react";
 import {useDropzone} from "react-dropzone";
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import Image from "next/image";
 import Link from "next/link";
 import axios from "axios";
@@ -17,7 +17,7 @@ import {
 import { sharedFileActions, MAX_FILE_SIZE } from "@/constants";  
 import { Button } from "@/components/ui/button";
 import { SharedFileDetails} from "./SharedFileModal";
-import { AccesserInfo, ActionType, FileInfo, SharedFileInfo } from "@/types";
+import { AccesserInfo, ActionType, SharedFileInfo } from "@/types";
 import { toast } from "sonner";
 
 //component for file actions for shared files
@@ -255,7 +255,7 @@ const SharedFileActions = ({file}: {file: SharedFileInfo})=>{
                 if(res){
                     setFileToUpload(null);
                     closeAllModals();
-                    toast(res.data);
+                    toast(res.data.message);
                 }
             }
         })

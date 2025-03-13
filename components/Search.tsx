@@ -78,8 +78,8 @@ const Search = () =>{
                }
                
                //if response contains files, store the array of files into results state variable and set open state to true
-               if(!response.data.message){
-                setResults(response.data);
+               if(response.data.searchFileDetails){
+                setResults(response.data.searchFileDetails);
                 setOpen(true);
                }
             }

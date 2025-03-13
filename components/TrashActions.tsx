@@ -65,7 +65,7 @@ const TrashActions = ({file}: {file: TrashFileInfo})=>{
             }
 
             //display message if request is successful
-            toast(response.data);
+            toast(response.data.message);
 
             return true;
        }
@@ -116,7 +116,7 @@ const TrashActions = ({file}: {file: TrashFileInfo})=>{
             }
 
             //display message if request is successful
-            toast(response?.data);
+            toast(response?.data.message);
             
             return true;
        }

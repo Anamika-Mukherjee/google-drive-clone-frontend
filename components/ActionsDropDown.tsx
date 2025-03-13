@@ -188,7 +188,7 @@ const ActionsDropDown = ({file}: {file: FileInfo})=>{
             }
 
             //display message after moving to trash
-            toast(response.data);
+            toast(response.data.message);
 
             return true;
        }
@@ -243,6 +243,9 @@ const ActionsDropDown = ({file}: {file: FileInfo})=>{
              
             //store accesser emails received from backend into accesserList state variable
             setAccesserList(response.data.accesserList);
+
+            //display message after success
+            toast(response.data.message);
 
             return true;             
        }
@@ -358,6 +361,9 @@ const ActionsDropDown = ({file}: {file: FileInfo})=>{
              
             //store the updated accesser list received from backend into the accesserList state variable
             setAccesserList(response?.data.accesserList);
+
+             //display message after success
+             toast(response.data.message);
 
             return true;             
        }
