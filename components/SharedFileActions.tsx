@@ -445,7 +445,7 @@ const SharedFileActions = ({file}: {file: SharedFileInfo})=>{
         
         return(
            
-            <DialogContent className="w-[300px] h-auto rounded-2xl">
+            <DialogContent className="w-[400px] h-auto rounded-2xl">
                 <DialogHeader className="flex flex-col gap-3">
                     <DialogTitle className="text-center">
                         {label}
