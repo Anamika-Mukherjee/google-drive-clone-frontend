@@ -320,7 +320,7 @@ const AuthForm = ({type}: {type: FormType}) =>{
             render={({ field }) => (
               <FormItem className="w-full p-4 space-y-6 lg:w-2/5 lg:space-y-2 lg:p-0">
                 <FormLabel
-                  className="text-3xl lg:text-lg">Password</FormLabel>
+                  className="text-3xl lg:text-lg">Confirm Password</FormLabel>
                 <FormControl>
                   <Input placeholder="Confirm Password" {...field} 
                     className = "h-[50px] text-3xl lg:h-[35px] lg:text-lg"
