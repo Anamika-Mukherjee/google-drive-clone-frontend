@@ -106,7 +106,7 @@ const Layout = ({children}: {children: React.ReactNode}) =>{
               <MobileNavigation {...userData}/>
               <Header/>
 
-               <div className="w-[80%] lg:h-[4/5] p-4 z-auto lg:overflow-y-auto flex flex-col justify-center items-center relative top-[20px] rounded-2xl bg-peach">
+               <div className="w-[80%] lg:h-[80%] p-4 z-auto lg:overflow-y-auto flex flex-col justify-center items-center relative top-[20px] rounded-2xl bg-peach">
                   {children}
                </div>
             </section>
