@@ -60,8 +60,6 @@ type signInFormSchema = z.infer<typeof signInSchema>
 //define component for authentication form
 const AuthForm = ({type}: {type: FormType}) =>{
 
-  
-  const [errorMessage, setErrorMessage] = useState(false);  
   const [error, setError] = useState<string>("");
   const [isLoading, setIsloading] = useState<boolean>(false);
   
@@ -339,9 +337,6 @@ const AuthForm = ({type}: {type: FormType}) =>{
             {type === "sign-in"? "Sign In": "Sign Up"}
           </Button>
           </div>
-          {errorMessage && (
-            <p>*{errorMessage}</p>
-          )}
           <div className=" flex justify-center items-center">
             <p className="text-2xl mb-10 lg:text-base">{type === "sign-in"? "Don't have an account?": "Already have an account?"}
             </p>

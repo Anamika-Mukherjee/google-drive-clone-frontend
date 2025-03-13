@@ -4,8 +4,8 @@ import { Toaster } from "sonner";
 
 const Layout = ({children}: {children: React.ReactNode}) =>{
     return(
-          <div className="flex min-h-screen w-screen justify-between">
-            <section className = "w-screen min-h-screen flex flex-col justify-around items-center lg:justify-center lg:items-center lg:w-2/3 xl:w-2/3">
+          <div className="flex h-auto lg:h-screen w-screen justify-between">
+            <section className = "w-screen h-auto lg:h-screen flex flex-col justify-around items-center lg:justify-center lg:items-center lg:w-2/3 xl:w-2/3">
                 <div className="w-full h-[100px] flex justify-center p-4 space-x-4 lg:hidden">
                   <div className="w-[70px] h-full bg-brand rounded-2xl flex justify-center items-center">
                   <Image 
@@ -22,7 +22,6 @@ const Layout = ({children}: {children: React.ReactNode}) =>{
                   {children}
                 </div>
                 <Toaster position="top-left"/>
-               
             </section>
             <section className="hidden xl:w-1/3 lg:w-1/3 min-h-screen lg:flex flex-col justify-around bg-brand p-8">
               <div className="w-full h-full text-white flex flex-col justify-start">

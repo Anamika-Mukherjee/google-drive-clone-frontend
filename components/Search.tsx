@@ -116,7 +116,7 @@ const Search = () =>{
                     className="w-[250px] h-[30px] ml-2 text-base focus:outline-brand"
                     onChange={(e)=>setQuery(e.target.value)}
                 />
-                <div className="w-[25px] h-[25px] flex justify-center items-center absolute top-[26px] left-[920px]">
+                <div className="w-[25px] h-[25px] flex justify-center items-center absolute top-[26px] left-[885px]">
                     <Image 
                     src="/assets/icons/search.svg"
                     alt="search"
